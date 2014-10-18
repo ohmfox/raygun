@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FA7837B19F221C800360ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7837A19F221C800360ECB /* AppDelegate.swift */; };
+		1FA7837D19F221C800360ECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7837C19F221C800360ECB /* ViewController.swift */; };
+		1FA7838019F221C900360ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7837E19F221C900360ECB /* Main.storyboard */; };
+		1FA7838219F221C900360ECB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7838119F221C900360ECB /* Images.xcassets */; };
+		1FA7838519F221C900360ECB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7838319F221C900360ECB /* LaunchScreen.xib */; };
+		1FA7839119F221C900360ECB /* RaygunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7839019F221C900360ECB /* RaygunTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FA7838B19F221C900360ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FA7836D19F221C800360ECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FA7837419F221C800360ECB;
+			remoteInfo = Raygun;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FA7837519F221C800360ECB /* Raygun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raygun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA7837919F221C800360ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FA7837A19F221C800360ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FA7837C19F221C800360ECB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FA7837F19F221C900360ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FA7838119F221C900360ECB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1FA7838419F221C900360ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1FA7838A19F221C900360ECB /* RaygunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaygunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA7838F19F221C900360ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FA7839019F221C900360ECB /* RaygunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaygunTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FA7837219F221C800360ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA7838719F221C900360ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FA7836C19F221C800360ECB = {
+			isa = PBXGroup;
+			children = (
+				1FA7837719F221C800360ECB /* Raygun */,
+				1FA7838D19F221C900360ECB /* RaygunTests */,
+				1FA7837619F221C800360ECB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FA7837619F221C800360ECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FA7837519F221C800360ECB /* Raygun.app */,
+				1FA7838A19F221C900360ECB /* RaygunTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FA7837719F221C800360ECB /* Raygun */ = {
+			isa = PBXGroup;
+			children = (
+				1FA7837A19F221C800360ECB /* AppDelegate.swift */,
+				1FA7837C19F221C800360ECB /* ViewController.swift */,
+				1FA7837E19F221C900360ECB /* Main.storyboard */,
+				1FA7838119F221C900360ECB /* Images.xcassets */,
+				1FA7838319F221C900360ECB /* LaunchScreen.xib */,
+				1FA7837819F221C800360ECB /* Supporting Files */,
+			);
+			path = Raygun;
+			sourceTree = "<group>";
+		};
+		1FA7837819F221C800360ECB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FA7837919F221C800360ECB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FA7838D19F221C900360ECB /* RaygunTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FA7839019F221C900360ECB /* RaygunTests.swift */,
+				1FA7838E19F221C900360ECB /* Supporting Files */,
+			);
+			path = RaygunTests;
+			sourceTree = "<group>";
+		};
+		1FA7838E19F221C900360ECB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FA7838F19F221C900360ECB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FA7837419F221C800360ECB /* Raygun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FA7839419F221C900360ECB /* Build configuration list for PBXNativeTarget "Raygun" */;
+			buildPhases = (
+				1FA7837119F221C800360ECB /* Sources */,
+				1FA7837219F221C800360ECB /* Frameworks */,
+				1FA7837319F221C800360ECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Raygun;
+			productName = Raygun;
+			productReference = 1FA7837519F221C800360ECB /* Raygun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FA7838919F221C900360ECB /* RaygunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FA7839719F221C900360ECB /* Build configuration list for PBXNativeTarget "RaygunTests" */;
+			buildPhases = (
+				1FA7838619F221C900360ECB /* Sources */,
+				1FA7838719F221C900360ECB /* Frameworks */,
+				1FA7838819F221C900360ECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FA7838C19F221C900360ECB /* PBXTargetDependency */,
+			);
+			name = RaygunTests;
+			productName = RaygunTests;
+			productReference = 1FA7838A19F221C900360ECB /* RaygunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FA7836D19F221C800360ECB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Conlin Durbin";
+				TargetAttributes = {
+					1FA7837419F221C800360ECB = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					1FA7838919F221C900360ECB = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 1FA7837419F221C800360ECB;
+					};
+				};
+			};
+			buildConfigurationList = 1FA7837019F221C800360ECB /* Build configuration list for PBXProject "Raygun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FA7836C19F221C800360ECB;
+			productRefGroup = 1FA7837619F221C800360ECB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FA7837419F221C800360ECB /* Raygun */,
+				1FA7838919F221C900360ECB /* RaygunTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FA7837319F221C800360ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA7838019F221C900360ECB /* Main.storyboard in Resources */,
+				1FA7838519F221C900360ECB /* LaunchScreen.xib in Resources */,
+				1FA7838219F221C900360ECB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA7838819F221C900360ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FA7837119F221C800360ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA7837D19F221C800360ECB /* ViewController.swift in Sources */,
+				1FA7837B19F221C800360ECB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA7838619F221C900360ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA7839119F221C900360ECB /* RaygunTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FA7838C19F221C900360ECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FA7837419F221C800360ECB /* Raygun */;
+			targetProxy = 1FA7838B19F221C900360ECB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FA7837E19F221C900360ECB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FA7837F19F221C900360ECB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1FA7838319F221C900360ECB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FA7838419F221C900360ECB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FA7839219F221C900360ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FA7839319F221C900360ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FA7839519F221C900360ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Raygun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FA7839619F221C900360ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Raygun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1FA7839819F221C900360ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RaygunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raygun.app/Raygun";
+			};
+			name = Debug;
+		};
+		1FA7839919F221C900360ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RaygunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raygun.app/Raygun";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FA7837019F221C800360ECB /* Build configuration list for PBXProject "Raygun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FA7839219F221C900360ECB /* Debug */,
+				1FA7839319F221C900360ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FA7839419F221C900360ECB /* Build configuration list for PBXNativeTarget "Raygun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FA7839519F221C900360ECB /* Debug */,
+				1FA7839619F221C900360ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1FA7839719F221C900360ECB /* Build configuration list for PBXNativeTarget "RaygunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FA7839819F221C900360ECB /* Debug */,
+				1FA7839919F221C900360ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FA7836D19F221C800360ECB /* Project object */;
+}
