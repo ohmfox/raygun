@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F3F087019F37EFC003FF381 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F086F19F37EFC003FF381 /* SettingsViewController.swift */; };
+		1F3F087219F394EA003FF381 /* JSONtools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F087119F394EA003FF381 /* JSONtools.swift */; };
+		1F3F087419F3BC93003FF381 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F087319F3BC93003FF381 /* Settings.swift */; };
 		1FA7837B19F221C800360ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7837A19F221C800360ECB /* AppDelegate.swift */; };
 		1FA7837D19F221C800360ECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7837C19F221C800360ECB /* ViewController.swift */; };
-		1FA7838019F221C900360ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7837E19F221C900360ECB /* Main.storyboard */; };
 		1FA7838219F221C900360ECB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7838119F221C900360ECB /* Images.xcassets */; };
-		1FA7838519F221C900360ECB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7838319F221C900360ECB /* LaunchScreen.xib */; };
 		1FA7839119F221C900360ECB /* RaygunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7839019F221C900360ECB /* RaygunTests.swift */; };
+		1FADBA7819F3E12D003625EF /* background_small.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1FADBA7719F3E12D003625EF /* background_small.jpeg */; };
+		1FADBA7A19F3ECF3003625EF /* raygun.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1FADBA7919F3ECF3003625EF /* raygun.wav */; };
+		1FF73F1A19F32A7900843BA1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF73F1919F32A7900843BA1 /* CoreLocation.framework */; };
+		1FF73F1B19F32B2500843BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7837E19F221C900360ECB /* Main.storyboard */; };
+		1FF73F1C19F32B2700843BA1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7838319F221C900360ECB /* LaunchScreen.xib */; };
+		1FF73F2219F35E7C00843BA1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FF73F1E19F35E7C00843BA1 /* LaunchScreen.xib */; };
+		1FF73F2319F35E7C00843BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF73F2019F35E7C00843BA1 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +33,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1FCA4D7219F29F18009C0F8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1F3F086F19F37EFC003FF381 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1F3F087119F394EA003FF381 /* JSONtools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONtools.swift; sourceTree = "<group>"; };
+		1F3F087319F3BC93003FF381 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1FA7837519F221C800360ECB /* Raygun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raygun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA7837919F221C800360ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FA7837A19F221C800360ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +60,11 @@
 		1FA7838A19F221C900360ECB /* RaygunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaygunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA7838F19F221C900360ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FA7839019F221C900360ECB /* RaygunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaygunTests.swift; sourceTree = "<group>"; };
+		1FADBA7719F3E12D003625EF /* background_small.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background_small.jpeg; path = Raygun/Images.xcassets/background_small.jpeg; sourceTree = SOURCE_ROOT; };
+		1FADBA7919F3ECF3003625EF /* raygun.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = raygun.wav; sourceTree = "<group>"; };
+		1FF73F1919F32A7900843BA1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1FF73F1F19F35E7C00843BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		1FF73F2119F35E7C00843BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF73F1A19F32A7900843BA1 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +89,7 @@
 		1FA7836C19F221C800360ECB = {
 			isa = PBXGroup;
 			children = (
+				1FF73F1919F32A7900843BA1 /* CoreLocation.framework */,
 				1FA7837719F221C800360ECB /* Raygun */,
 				1FA7838D19F221C900360ECB /* RaygunTests */,
 				1FA7837619F221C800360ECB /* Products */,
@@ -79,10 +110,15 @@
 			children = (
 				1FA7837A19F221C800360ECB /* AppDelegate.swift */,
 				1FA7837C19F221C800360ECB /* ViewController.swift */,
+				1F3F087319F3BC93003FF381 /* Settings.swift */,
 				1FA7837E19F221C900360ECB /* Main.storyboard */,
+				1FF73F1D19F35E7C00843BA1 /* Base.lproj */,
 				1FA7838119F221C900360ECB /* Images.xcassets */,
+				1FADBA7919F3ECF3003625EF /* raygun.wav */,
 				1FA7838319F221C900360ECB /* LaunchScreen.xib */,
 				1FA7837819F221C800360ECB /* Supporting Files */,
+				1F3F086F19F37EFC003FF381 /* SettingsViewController.swift */,
+				1F3F087119F394EA003FF381 /* JSONtools.swift */,
 			);
 			path = Raygun;
 			sourceTree = "<group>";
@@ -112,6 +148,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1FF73F1D19F35E7C00843BA1 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				1FF73F1E19F35E7C00843BA1 /* LaunchScreen.xib */,
+				1FF73F2019F35E7C00843BA1 /* Main.storyboard */,
+				1FADBA7719F3E12D003625EF /* background_small.jpeg */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,6 +168,7 @@
 				1FA7837119F221C800360ECB /* Sources */,
 				1FA7837219F221C800360ECB /* Frameworks */,
 				1FA7837319F221C800360ECB /* Resources */,
+				1FCA4D7219F29F18009C0F8F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +208,12 @@
 				TargetAttributes = {
 					1FA7837419F221C800360ECB = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 2S3D8J8M3T;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					1FA7838919F221C900360ECB = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -192,9 +245,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA7838019F221C900360ECB /* Main.storyboard in Resources */,
-				1FA7838519F221C900360ECB /* LaunchScreen.xib in Resources */,
+				1FF73F2219F35E7C00843BA1 /* LaunchScreen.xib in Resources */,
+				1FF73F2319F35E7C00843BA1 /* Main.storyboard in Resources */,
 				1FA7838219F221C900360ECB /* Images.xcassets in Resources */,
+				1FADBA7819F3E12D003625EF /* background_small.jpeg in Resources */,
+				1FF73F1B19F32B2500843BA1 /* Main.storyboard in Resources */,
+				1FADBA7A19F3ECF3003625EF /* raygun.wav in Resources */,
+				1FF73F1C19F32B2700843BA1 /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FA7837D19F221C800360ECB /* ViewController.swift in Sources */,
+				1F3F087219F394EA003FF381 /* JSONtools.swift in Sources */,
 				1FA7837B19F221C800360ECB /* AppDelegate.swift in Sources */,
+				1F3F087019F37EFC003FF381 /* SettingsViewController.swift in Sources */,
+				1F3F087419F3BC93003FF381 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +310,22 @@
 				1FA7838419F221C900360ECB /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		1FF73F1E19F35E7C00843BA1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FF73F1F19F35E7C00843BA1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		1FF73F2019F35E7C00843BA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FF73F2119F35E7C00843BA1 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,9 +414,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/raygun-cgvzqphinqvdpffbgbgitwrjzuxq/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Raygun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -348,9 +431,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/raygun-cgvzqphinqvdpffbgbgitwrjzuxq/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Raygun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -407,6 +497,7 @@
 				1FA7839619F221C900360ECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FA7839719F221C900360ECB /* Build configuration list for PBXNativeTarget "RaygunTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +506,7 @@
 				1FA7839919F221C900360ECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

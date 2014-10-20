@@ -1,4 +1,4 @@
-//
+    //
 //  AppDelegate.swift
 //  Raygun
 //
@@ -7,16 +7,46 @@
 //
 
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
+    
     var window: UIWindow?
-
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+    var locationManager: CLLocationManager?
+    var lastProximity: CLProximity?
+    var backgroundImage: UIImage!
+    var atBase = false
+    
+    func application(application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
+            
+            backgroundImage = UIImage(named: "background_small.jpeg")
+            
+            let uuidString = "e5a06431-5cc0-4d46-bce4-d5ceb0d0a2e7"
+            let beaconIdentifier = "iBeaconModules.us"
+            let beaconUUID:NSUUID = NSUUID(UUIDString: uuidString)
+            let beaconRegion:CLBeaconRegion = CLBeaconRegion(proximityUUID: beaconUUID,
+                identifier: beaconIdentifier)
+            
+            locationManager = CLLocationManager()
+            
+            if(locationManager!.respondsToSelector("requestAlwaysAuthorization")) {
+                locationManager!.requestAlwaysAuthorization()
+            }
+            
+            
+            locationManager!.delegate = self
+            locationManager!.pausesLocationUpdatesAutomatically = false
+            
+            locationManager!.startMonitoringForRegion(beaconRegion)
+            locationManager!.startRangingBeaconsInRegion(beaconRegion)
+            
+            return true
+    }
+    
+    func startLocMan() {
+        locationManager!.startUpdatingLocation()
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -40,7 +70,59 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func locationManager(manager: CLLocationManager!, didRangeBeacons beacons: [AnyObject]!, inRegion region: CLBeaconRegion!) {
+            
+            if(beacons.count > 0) {
+                let nearestBeacon:CLBeacon = beacons[0] as CLBeacon
+                
+                if(nearestBeacon.proximity == lastProximity ||
+                    nearestBeacon.proximity == CLProximity.Unknown) {
+                        return;
+                }
+                lastProximity = nearestBeacon.proximity;
+                
+                var atBase = false
+                
+                switch nearestBeacon.proximity {
+                case CLProximity.Far:
+                    NSLog("You are far away from the base")
+                case CLProximity.Near:
+                    NSLog("You are near the base")
+                    fallthrough
+                case CLProximity.Immediate:
+                    NSLog("You are at your base")
+                    self.atBase = true
+                case CLProximity.Unknown:
+                    return
+                }
+                
+                
+                
+            } else {
+                
+                if(lastProximity == CLProximity.Unknown) {
+                    return;
+                }
+                
+                NSLog("No beacons are nearby")
+                lastProximity = CLProximity.Unknown
+            }
+    }
 
+    func locationManager(manager: CLLocationManager!, didEnterRegion region: CLRegion!) {
+            manager.startRangingBeaconsInRegion(region as CLBeaconRegion)
+            manager.startUpdatingLocation()
+            
+            NSLog("You entered the region")
 
+    }
+
+    func locationManager(manager: CLLocationManager!, didExitRegion region: CLRegion!) {
+            manager.stopRangingBeaconsInRegion(region as CLBeaconRegion)
+            manager.stopUpdatingLocation()
+            
+            NSLog("You exited the region")
+
+    }
 }
-
